@@ -1,0 +1,33 @@
+﻿<Window x:Class="BurgerCity.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BurgerCity"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="540.6" Width="261.2">
+    <Window.Resources>
+        <DataTemplate x:Key="DataTemplate1">
+            <Grid/>
+        </DataTemplate>
+    </Window.Resources>
+    <StackPanel HorizontalAlignment="left" VerticalAlignment="top">
+        <Button Click="VegWithCola_Click">Order Veg Burger With Cola</Button>
+        <Button Click="VegWithSprite_Click">Order Veg Burger With Sprite</Button>
+        <Button>Order Veg Burger With Black Tea</Button>
+        <Button>Order Veg Burger With Hot Cocoa</Button>
+        <Button>Order Beef Burger With Cola</Button>
+        <Button>Order Beef Burger With Sprite</Button>
+        <Button>Order Beef Burger With Black Tea</Button>
+        <Button>Order Beef Burger With Hot Cocoa</Button>
+        <Grid Margin="10">
+            <ItemsControl x:Name="OrderList">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}"/>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </Grid>
+    </StackPanel>
+</Window>

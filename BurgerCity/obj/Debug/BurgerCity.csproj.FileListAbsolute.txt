@@ -1,0 +1,16 @@
+C:\Users\ioan.morar\source\repos\BurgerCity\BurgerCity\obj\Debug\BurgerCity.csprojAssemblyReference.cache
+C:\Users\ioan.morar\source\repos\BurgerCity\BurgerCity\obj\Debug\MainWindow.g.cs
+C:\Users\ioan.morar\source\repos\BurgerCity\BurgerCity\obj\Debug\App.g.cs
+C:\Users\ioan.morar\source\repos\BurgerCity\BurgerCity\obj\Debug\BurgerCity_MarkupCompile.cache
+C:\Users\ioan.morar\source\repos\BurgerCity\BurgerCity\obj\Debug\BurgerCity_MarkupCompile.lref
+C:\Users\ioan.morar\source\repos\BurgerCity\BurgerCity\bin\Debug\BurgerCity.exe.config
+C:\Users\ioan.morar\source\repos\BurgerCity\BurgerCity\bin\Debug\BurgerCity.exe
+C:\Users\ioan.morar\source\repos\BurgerCity\BurgerCity\bin\Debug\BurgerCity.pdb
+C:\Users\ioan.morar\source\repos\BurgerCity\BurgerCity\obj\Debug\MainWindow.baml
+C:\Users\ioan.morar\source\repos\BurgerCity\BurgerCity\obj\Debug\BurgerCity.g.resources
+C:\Users\ioan.morar\source\repos\BurgerCity\BurgerCity\obj\Debug\BurgerCity.Properties.Resources.resources
+C:\Users\ioan.morar\source\repos\BurgerCity\BurgerCity\obj\Debug\BurgerCity.csproj.GenerateResource.cache
+C:\Users\ioan.morar\source\repos\BurgerCity\BurgerCity\obj\Debug\BurgerCity.csproj.CoreCompileInputs.cache
+C:\Users\ioan.morar\source\repos\BurgerCity\BurgerCity\obj\Debug\BurgerCity.exe
+C:\Users\ioan.morar\source\repos\BurgerCity\BurgerCity\obj\Debug\BurgerCity.pdb
+C:\Users\ioan.morar\source\repos\BurgerCity\BurgerCity\obj\Debug\App.baml
