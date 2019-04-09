@@ -5,7 +5,12 @@ namespace BurgerCity.Entities
 {
     public class Menu : IMenu
     {
-        public List<IMenuItem> Items => new List<IMenuItem>();
+        public List<IMenuItem> Items;
+
+        public Menu()
+        {
+            Items = new List<IMenuItem>();
+        }
 
         public void AddItem(IMenuItem item)
         {
@@ -14,11 +19,14 @@ namespace BurgerCity.Entities
 
         public IEnumerable<string> DisplayItems()
         {
-            for(int i = 0; i < Items.Count(); i++)
+            List<string> result = new List<string>();
+
+            foreach(var item in Items)
             {
-                IMenuItem item = Items.ElementAt(i);
-                yield return string.Format("{0}. {1} (on {2}) - {3}", i, item.Name(), item.Packing(), item.Price());
+                result.Add(string.Format("- {0} (on {1}) - {2} RON", item.Name(), item.Packing(), item.Price()));
             }
+
+            return result;
         }
 
         public float GetCost()

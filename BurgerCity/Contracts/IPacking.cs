@@ -1,6 +1,6 @@
 ﻿namespace BurgerCity.Contracts
 {
-    interface IPacking
+    public interface IPacking
     {
         string Pack();
     }

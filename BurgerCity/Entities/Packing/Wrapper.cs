@@ -1,5 +1,4 @@
 ﻿using BurgerCity.Contracts;
-using System;
 
 namespace BurgerCity.Entities.Packing
 {
@@ -7,7 +6,7 @@ namespace BurgerCity.Entities.Packing
     {
         public string Pack()
         {
-            throw new NotImplementedException();
+            return "wrapper";
         }
     }
 }

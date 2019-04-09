@@ -9,6 +9,10 @@
             <GradientStop Color="#fff" Offset="0.5" />
             <GradientStop Color="#f0f0f0" Offset="1" />
         </LinearGradientBrush>
+        <Style TargetType="{x:Type ComboBox}">
+            <Setter Property="Width" Value="200" />
+            <Setter Property="Margin" Value="5" />
+        </Style>
         <Style TargetType="{x:Type Button}">
             <Setter Property="Background" Value="{StaticResource GrayBlueGradientBrush}" />
             <Setter Property="Width" Value="200" />

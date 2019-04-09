@@ -1,4 +1,5 @@
-﻿using BurgerCity.Contracts;
+﻿using BurgerCity.Entities.Enums;
+using BurgerCity.Services;
 
 namespace BurgerCity.Entities.Packing
 {
@@ -6,7 +7,7 @@ namespace BurgerCity.Entities.Packing
     {
         public override string Packing()
         {
-            return new Cup().Pack();
+            return new MenuFactory().GetPacking(PackingType.CUP).Pack();
         }
     }
 }

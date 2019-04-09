@@ -1,4 +1,6 @@
 ﻿using BurgerCity.Contracts;
+using BurgerCity.Entities.Enums;
+using BurgerCity.Services;
 
 namespace BurgerCity.Entities.Packing
 {
@@ -9,7 +11,7 @@ namespace BurgerCity.Entities.Packing
 
         public string Packing()
         {
-            return new Wrapper().Pack();
+            return new MenuFactory().GetPacking(PackingType.WRAPPER).Pack();
         }
     }
 }

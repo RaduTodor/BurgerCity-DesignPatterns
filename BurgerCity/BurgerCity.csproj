@@ -55,6 +55,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Entities\Enums\BurgerType.cs" />
+    <Compile Include="Entities\Enums\DrinkType.cs" />
+    <Compile Include="Entities\Enums\PackingType.cs" />
+    <Compile Include="Services\MenuFactory.cs" />
+    <Compile Include="Contracts\IMenuFactory.cs" />
     <Compile Include="Entities\Packing\Drink.cs" />
     <Compile Include="Services\MenuBuilder.cs" />
     <Page Include="MainWindow.xaml">
@@ -79,7 +84,6 @@
     <Compile Include="Entities\Packing\ColdDrink.cs" />
     <Compile Include="Entities\Packing\Burger.cs" />
     <Compile Include="Contracts\IMenuItem.cs" />
-    <Compile Include="Entities\Packing\PackingType.cs" />
     <Compile Include="Entities\Packing\Bottle.cs" />
     <Compile Include="Entities\Packing\Wrapper.cs" />
     <Compile Include="MainWindow.xaml.cs">

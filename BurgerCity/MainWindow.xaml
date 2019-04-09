@@ -6,20 +6,19 @@
         xmlns:local="clr-namespace:BurgerCity"
         mc:Ignorable="d"
         Title="MainWindow" Height="540.6" Width="261.2">
-    <Window.Resources>
-        <DataTemplate x:Key="DataTemplate1">
-            <Grid/>
-        </DataTemplate>
-    </Window.Resources>
     <StackPanel HorizontalAlignment="left" VerticalAlignment="top">
-        <Button Click="VegWithCola_Click">Order Veg Burger With Cola</Button>
-        <Button Click="VegWithSprite_Click">Order Veg Burger With Sprite</Button>
-        <Button>Order Veg Burger With Black Tea</Button>
-        <Button>Order Veg Burger With Hot Cocoa</Button>
-        <Button>Order Beef Burger With Cola</Button>
-        <Button>Order Beef Burger With Sprite</Button>
-        <Button>Order Beef Burger With Black Tea</Button>
-        <Button>Order Beef Burger With Hot Cocoa</Button>
+        <Label>BURGER CITY MENU</Label>
+        <ComboBox SelectedValuePath="Tag" x:Name="SelectedBurgerType">
+          <ComboBoxItem Tag="1">Veg Burger</ComboBoxItem>
+          <ComboBoxItem IsSelected="True" Tag="2">Beef Burger</ComboBoxItem>
+        </ComboBox>
+        <ComboBox SelectedValuePath="Tag" x:Name="SelectedDrinkType">
+        <ComboBoxItem IsSelected="True" Tag="1">Coca Cola</ComboBoxItem>
+        <ComboBoxItem Tag="2">Sprite</ComboBoxItem>
+        <ComboBoxItem Tag="3">Black Tea</ComboBoxItem>
+        <ComboBoxItem Tag="4">Hot Cocoa</ComboBoxItem>
+      </ComboBox>
+      <Button Click="AddToOrder_Click">Add to current order</Button>
         <Grid Margin="10">
             <ItemsControl x:Name="OrderList">
                 <ItemsControl.ItemTemplate>

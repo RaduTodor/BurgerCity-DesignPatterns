@@ -1,5 +1,8 @@
-﻿using BurgerCity.Entities;
+﻿using BurgerCity.Contracts;
+using BurgerCity.Entities;
+using BurgerCity.Entities.Enums;
 using BurgerCity.Services;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Windows;
@@ -18,29 +21,22 @@ namespace BurgerCity
             InitializeComponent();
         }
 
-        private void VegWithCola_Click(object sender, RoutedEventArgs e)
+        private void AddToOrder_Click(object sender, RoutedEventArgs e)
         {
-            var menu = builder.PrepareBurger(new VegBurger(), new CocaCola());
-            string content = "";
+            DrinkType drinkType = (DrinkType)Convert.ToInt32(SelectedDrinkType.SelectedValue);
+            BurgerType burgerType = (BurgerType)Convert.ToInt32(SelectedBurgerType.SelectedValue);
+
+            IMenuFactory menuFactory = new MenuFactory();
+
+            var menu = builder.PrepareBurger(menuFactory.GetBurger(burgerType), menuFactory.GetDrink(drinkType));
+            string content = string.Format("\n{0}. Total Price: {1} RON", OrderList.Items.Count + 1, menu.GetCost());
+
             foreach (var item in menu.DisplayItems())
             {
-                content += " ";
+                content += "\n";
                 content += item;
             }
             OrderList.Items.Add(content);
-        }
-
-        private void VegWithSprite_Click(object sender, RoutedEventArgs e)
-        {
-            var menu = builder.PrepareBurger(new VegBurger(), new Sprite());
-            string content = "";
-            foreach (var item in menu.DisplayItems())
-            {
-                content += " ";
-                content += item;
-            }
-            OrderList.Items.Add(content);
-
         }
     }
 }
