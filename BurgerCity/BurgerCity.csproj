@@ -55,9 +55,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Contracts\IOrder.cs" />
+    <Compile Include="Entities\Enums\MenuSize.cs" />
     <Compile Include="Entities\Enums\BurgerType.cs" />
     <Compile Include="Entities\Enums\DrinkType.cs" />
     <Compile Include="Entities\Enums\PackingType.cs" />
+    <Compile Include="Entities\Order.cs" />
     <Compile Include="Services\MenuFactory.cs" />
     <Compile Include="Contracts\IMenuFactory.cs" />
     <Compile Include="Entities\Packing\Drink.cs" />
@@ -70,7 +73,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Contracts\IMenu.cs" />
+    <Compile Include="Contracts\AMenu.cs" />
     <Compile Include="Contracts\IPacking.cs" />
     <Compile Include="Entities\HotCocoa.cs" />
     <Compile Include="Entities\BlackTea.cs" />
@@ -117,6 +120,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Decorators\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

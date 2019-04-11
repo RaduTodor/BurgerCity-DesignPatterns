@@ -1,15 +1,20 @@
 ﻿using BurgerCity.Contracts;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 namespace BurgerCity.Entities
 {
     public class Menu : IMenu
     {
-        public List<IMenuItem> Items;
+        protected List<IMenuItem> Items;
+        protected Guid UniqueId;
+        public string Content { get { return string.Join("\n", Display()); } }
+        public float TotalPrice { get { return GetCost(); } }
 
         public Menu()
         {
             Items = new List<IMenuItem>();
+            UniqueId = Guid.NewGuid();
         }
 
         public void AddItem(IMenuItem item)
@@ -17,7 +22,7 @@ namespace BurgerCity.Entities
             Items.Add(item);
         }
 
-        public IEnumerable<string> DisplayItems()
+        public IEnumerable<string> Display()
         {
             List<string> result = new List<string>();
 
@@ -39,6 +44,11 @@ namespace BurgerCity.Entities
             }
 
             return cost;
+        }
+
+        public Guid GetUniqueId()
+        {
+            return UniqueId;
         }
     }
 }

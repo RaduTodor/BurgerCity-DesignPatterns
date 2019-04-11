@@ -5,28 +5,53 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BurgerCity"
         mc:Ignorable="d"
-        Title="MainWindow" Height="540.6" Width="261.2">
-    <StackPanel HorizontalAlignment="left" VerticalAlignment="top">
+        Title="MainWindow" Height="700" Width="900">
+    <StackPanel HorizontalAlignment="left" VerticalAlignment="top" Width="900">
         <Label>BURGER CITY MENU</Label>
         <ComboBox SelectedValuePath="Tag" x:Name="SelectedBurgerType">
           <ComboBoxItem Tag="1">Veg Burger</ComboBoxItem>
           <ComboBoxItem IsSelected="True" Tag="2">Beef Burger</ComboBoxItem>
         </ComboBox>
-        <ComboBox SelectedValuePath="Tag" x:Name="SelectedDrinkType">
-        <ComboBoxItem IsSelected="True" Tag="1">Coca Cola</ComboBoxItem>
-        <ComboBoxItem Tag="2">Sprite</ComboBoxItem>
-        <ComboBoxItem Tag="3">Black Tea</ComboBoxItem>
-        <ComboBoxItem Tag="4">Hot Cocoa</ComboBoxItem>
-      </ComboBox>
-      <Button Click="AddToOrder_Click">Add to current order</Button>
-        <Grid Margin="10">
-            <ItemsControl x:Name="OrderList">
-                <ItemsControl.ItemTemplate>
-                    <DataTemplate>
-                        <TextBlock Text="{Binding}"/>
-                    </DataTemplate>
-                </ItemsControl.ItemTemplate>
-            </ItemsControl>
-        </Grid>
+            <ComboBox SelectedValuePath="Tag" x:Name="SelectedDrinkType">
+            <ComboBoxItem IsSelected="True" Tag="1">Coca Cola</ComboBoxItem>
+            <ComboBoxItem Tag="2">Sprite</ComboBoxItem>
+            <ComboBoxItem Tag="3">Black Tea</ComboBoxItem>
+            <ComboBoxItem Tag="4">Hot Cocoa</ComboBoxItem>
+        </ComboBox>
+        <ComboBox SelectedValuePath="Tag" x:Name="SelectedMenuSize">
+            <ComboBoxItem IsSelected="True" Tag="1">Small</ComboBoxItem>
+            <ComboBoxItem Tag="2">Normal</ComboBoxItem>
+            <ComboBoxItem Tag="3">Big</ComboBoxItem>
+        </ComboBox>
+        <Button Click="AddToOrder_Click">Add to current order</Button>
+        <ScrollViewer HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Visible">
+            <Grid HorizontalAlignment="Left" Height="400" VerticalAlignment="Top" Width="736" Margin="10,63,0,0">
+                <DataGrid ColumnWidth="*" Name="OrderContent" ItemsSource="{Binding order.Menus}" AutoGenerateColumns="False" SelectionMode="Single" IsReadOnly="False" >
+                    <DataGrid.Columns>
+                        <DataGridTemplateColumn Header="Menu">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Margin="10" Text="{Binding Content}"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        <DataGridTemplateColumn Header="Price">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Margin="10" Text="{Binding Path=TotalPrice, StringFormat=+ {0} RON}"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        <DataGridTemplateColumn Header="Remove">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button Content="X" Click="btnDelete_Click"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+        </ScrollViewer>
     </StackPanel>
 </Window>
