@@ -1,8 +1,10 @@
 ﻿using BurgerCity.Contracts;
+using BurgerCity.Decorators;
 using BurgerCity.Entities;
 using BurgerCity.Entities.Enums;
 using BurgerCity.Services;
 using System;
+using System.Collections.Generic;
 using System.Windows;
 
 namespace BurgerCity
@@ -14,7 +16,7 @@ namespace BurgerCity
     {
         private MenuBuilder builder = new MenuBuilder();
         private Order order = new Order();
-
+        
         public MainWindow()
         {
             InitializeComponent();
@@ -30,7 +32,7 @@ namespace BurgerCity
 
         private void btnDelete_Click(object sender, RoutedEventArgs e)
         {
-            IMenu selectedMenu = OrderContent.SelectedItem as IMenu;
+            AMenu selectedMenu = OrderContent.SelectedItem as AMenu;
             order.RemoveMenu(selectedMenu.GetUniqueId());
             ReinitOrderSource();
             MessageBox.Show("Menu Deleted Successfully");
@@ -40,13 +42,14 @@ namespace BurgerCity
         {
             DrinkType drinkType = (DrinkType)Convert.ToInt32(SelectedDrinkType.SelectedValue);
             BurgerType burgerType = (BurgerType)Convert.ToInt32(SelectedBurgerType.SelectedValue);
+            MenuSize menuSize = (MenuSize)Convert.ToInt32(SelectedMenuSize.SelectedValue);
 
             IMenuFactory menuFactory = new MenuFactory();
 
-            var menu = builder.PrepareBurger(menuFactory.GetBurger(burgerType), menuFactory.GetDrink(drinkType));
-            MenuSize menuSize = (MenuSize)Convert.ToInt32(SelectedMenuSize.SelectedValue);
+            var menu = builder.PrepareBurger(menuFactory.GetBurger(burgerType), menuFactory.GetDrink(drinkType), menuSize);
 
             order.AddMenu(menu);
+
             
             ReinitOrderSource();
         }

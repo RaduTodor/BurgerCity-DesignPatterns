@@ -1,4 +1,5 @@
 ﻿using BurgerCity.Contracts;
+using BurgerCity.Decorators;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,15 +7,15 @@ namespace BurgerCity.Entities
 {
     public class Order : IOrder
     {
-        public List<IMenu> Menus { get; private set; }
+        public List<MenuDecorator> Menus { get; private set; }
         public float Price;
 
         public Order()
         {
-            Menus = new List<IMenu>();
+            Menus = new List<MenuDecorator>();
         }
 
-        public void AddMenu(IMenu menu)
+        public void AddMenu(MenuDecorator menu)
         {
             Menus.Add(menu);
         }

@@ -3,11 +3,32 @@ using System.Collections.Generic;
 
 namespace BurgerCity.Contracts
 {
-    public interface IMenu
+    public abstract class AMenu
     {
-        void AddItem(IMenuItem item);
-        float GetCost();
-        IEnumerable<string> Display();
-        Guid GetUniqueId();
+        protected Guid UniqueId = Guid.NewGuid();
+        public List<IMenuItem> Items = new List<IMenuItem>();
+
+        public virtual void AddItem(IMenuItem item)
+        {
+            Items.Add(item);
+        }
+
+        public abstract float GetCost();
+        public virtual IEnumerable<string> Display()
+        {
+            List<string> result = new List<string>();
+
+            foreach (var item in Items)
+            {
+                result.Add(string.Format("- {0} (on {1}) - {2} RON", item.Name(), item.Packing(), item.Price()));
+            }
+
+            return result;
+        }
+
+        public virtual Guid GetUniqueId()
+        {
+            return UniqueId;
+        }
     }
 }

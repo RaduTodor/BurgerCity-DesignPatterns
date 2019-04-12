@@ -56,6 +56,10 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Contracts\IOrder.cs" />
+    <Compile Include="Decorators\MenuDecorator.cs" />
+    <Compile Include="Decorators\BigDecorator.cs" />
+    <Compile Include="Decorators\NormalDecorator.cs" />
+    <Compile Include="Decorators\SmallDecorator.cs" />
     <Compile Include="Entities\Enums\MenuSize.cs" />
     <Compile Include="Entities\Enums\BurgerType.cs" />
     <Compile Include="Entities\Enums\DrinkType.cs" />
@@ -120,8 +124,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Decorators\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
