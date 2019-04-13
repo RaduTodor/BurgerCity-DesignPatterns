@@ -15,25 +15,38 @@ namespace BurgerCity
     public partial class MainWindow : Window
     {
         private MenuBuilder builder = new MenuBuilder();
-        private Order order = new Order();
-        
+        private int OrderIndex = 0;
+        private Order currentOrder = new Order(0);
+        private List<Order> orderQueue = new List<Order>();
+        private bool canFinalizeCurrentOrder = false;
+
         public MainWindow()
         {
             InitializeComponent();
-            OrderContent.ItemsSource = order.Menus;
+            OrderContent.ItemsSource = currentOrder.Menus;
+            OrderList.ItemsSource = orderQueue;
+            FinalizeOrderBtn.Visibility = Visibility.Hidden;
         }
 
         private void ReinitOrderSource()
         {
             OrderContent.ItemsSource = null;
-            OrderContent.ItemsSource = order.Menus;
+            OrderContent.ItemsSource = currentOrder.Menus;
+            canFinalizeCurrentOrder = currentOrder.Menus.Count > 0;
+            FinalizeOrderBtn.Visibility = canFinalizeCurrentOrder ? Visibility.Visible : Visibility.Hidden;
+        }
+
+        private void ReinitOrderQueueSource()
+        {
+            OrderList.ItemsSource = null;
+            OrderList.ItemsSource = orderQueue;
         }
 
 
         private void btnDelete_Click(object sender, RoutedEventArgs e)
         {
             AMenu selectedMenu = OrderContent.SelectedItem as AMenu;
-            order.RemoveMenu(selectedMenu.GetUniqueId());
+            currentOrder.RemoveMenu(selectedMenu.GetUniqueId());
             ReinitOrderSource();
             MessageBox.Show("Menu Deleted Successfully");
         }
@@ -48,10 +61,17 @@ namespace BurgerCity
 
             var menu = builder.PrepareBurger(menuFactory.GetBurger(burgerType), menuFactory.GetDrink(drinkType), menuSize);
 
-            order.AddMenu(menu);
+            currentOrder.AddMenu(menu);
 
-            
             ReinitOrderSource();
+        }
+
+        private void SubmitOrder_Click(object sender, RoutedEventArgs e)
+        {
+            orderQueue.Add(currentOrder);
+            currentOrder = new Order(++OrderIndex);
+            ReinitOrderSource();
+            ReinitOrderQueueSource();
         }
     }
 }

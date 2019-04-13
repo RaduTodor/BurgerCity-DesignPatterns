@@ -61,6 +61,7 @@
     <Compile Include="Decorators\BigDecorator.cs" />
     <Compile Include="Decorators\NormalDecorator.cs" />
     <Compile Include="Decorators\SmallDecorator.cs" />
+    <Compile Include="Entities\Enums\OrderProcess.cs" />
     <Compile Include="Entities\Enums\MenuSize.cs" />
     <Compile Include="Entities\Enums\BurgerType.cs" />
     <Compile Include="Entities\Enums\DrinkType.cs" />

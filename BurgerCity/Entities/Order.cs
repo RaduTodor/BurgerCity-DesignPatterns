@@ -1,5 +1,6 @@
 ﻿using BurgerCity.Contracts;
 using BurgerCity.Decorators;
+using BurgerCity.Entities.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,16 +9,20 @@ namespace BurgerCity.Entities
     public class Order : IOrder
     {
         public List<MenuDecorator> Menus { get; private set; }
-        public float Price;
+        public float TotalPrice { get; set; } = 0.0f;
+        public int UniqueKey { get; set; }
+        public OrderProcess Process { get; set; } = OrderProcess.OnWaitingList;
 
-        public Order()
+        public Order(int key)
         {
             Menus = new List<MenuDecorator>();
+            UniqueKey = key;
         }
 
         public void AddMenu(MenuDecorator menu)
         {
             Menus.Add(menu);
+            TotalPrice += menu.GetCost();
         }
 
         public IDictionary<Guid, string> Display()
