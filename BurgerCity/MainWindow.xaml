@@ -101,7 +101,7 @@
                 <StackPanel Grid.Column="2">
                     <TextBox Text="READY"></TextBox>
 
-                    <ListBox x:Name="Ready">
+                    <ListBox x:Name="Ready" MouseDoubleClick="Ready_OnMouseDoubleClick">
                         <ListBox.ItemTemplate>
                             <DataTemplate>
                                 <StackPanel Orientation="Horizontal">

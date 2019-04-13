@@ -8,6 +8,8 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Linq;
 using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Input;
 
 namespace BurgerCity
 {
@@ -117,6 +119,12 @@ namespace BurgerCity
                 ReinitOrderSource();
                 ReinitOrderQueueSource();
             }
+        }
+
+        private void Ready_OnMouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            AllOrders.RemoveOrder((Order)((ListBox)sender).SelectedItem);
+            ReinitOrderQueueSource();
         }
     }
 }

@@ -21,6 +21,12 @@ namespace BurgerCity.Entities
             Notify(_orderList);
         }
 
+        public void RemoveOrder(Order order)
+        {
+            _orderList.Remove(order);
+            Notify(_orderList);
+        }
+
         public void Notify(List<Order> orders)
         {
             foreach (var subscriber in _subscribers)
