@@ -16,5 +16,10 @@ namespace BurgerCity.Decorators
             UniqueId = baseComponent.GetUniqueId();
             Items = baseComponent.Items;
         }
+
+        public override float GetCost()
+        {
+            return Price;
+        }
     }
 }
