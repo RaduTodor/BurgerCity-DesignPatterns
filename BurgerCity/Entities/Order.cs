@@ -48,6 +48,7 @@ namespace BurgerCity.Entities
         {
             var toBeRemoved = Menus.Where(x => x.GetUniqueId() == uniqueId).FirstOrDefault();
             Menus.Remove(toBeRemoved);
+            TotalPrice -= toBeRemoved.GetCost();
             LoggerSingleton.Logger.LogMessage(string.Format("Menu (id:{0}) was removed from the order (id: {1})", toBeRemoved.GetUniqueId(), UniqueKey));
         }
 

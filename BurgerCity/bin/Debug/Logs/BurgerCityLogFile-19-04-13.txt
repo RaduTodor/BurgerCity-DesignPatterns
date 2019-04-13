@@ -1283,3 +1283,568 @@ Date: 4/13/2019
 Time: 7:06:47 PM
 Message: Menu (id:033a59e0-6472-4df3-8202-08b0b841aaa6) was added in the order (id: 4)
 --------------------
+--------------------
+Date: 4/13/2019
+Time: 7:16:41 PM
+Message: a Beef Burger was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:16:41 PM
+Message: a Coca Cola was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:16:41 PM
+Message: Menu (id:ff260662-7ea1-4af3-acce-93d320fdf241) was added in the order (id: 1)
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:16:51 PM
+Message: a Beef Burger was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:16:51 PM
+Message: a Coca Cola was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:16:51 PM
+Message: Menu (id:dfecfc21-b820-4174-b63a-ce8f6d7636f7) was added in the order (id: 2)
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:01 PM
+Message: a Beef Burger was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:01 PM
+Message: a Coca Cola was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:01 PM
+Message: Menu (id:2cd20339-c234-4e44-b74e-80fe7e1baa45) was added in the order (id: 3)
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:08 PM
+Message: a Beef Burger was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:08 PM
+Message: a Coca Cola was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:08 PM
+Message: Menu (id:94d34e23-0b4a-408b-b1dc-24e3821b65a1) was added in the order (id: 4)
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:08 PM
+Message: a Beef Burger was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:08 PM
+Message: a Coca Cola was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:08 PM
+Message: Menu (id:6a615d85-e6bc-4595-894a-7262ea5b5eda) was added in the order (id: 4)
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:08 PM
+Message: a Beef Burger was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:08 PM
+Message: a Coca Cola was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:08 PM
+Message: Menu (id:2fc17ee1-f2ab-41ed-a748-06a6f1b7b02f) was added in the order (id: 4)
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:08 PM
+Message: a Beef Burger was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:08 PM
+Message: a Coca Cola was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:08 PM
+Message: Menu (id:41695ea6-e3db-46b8-a3a3-68ebc595b5d6) was added in the order (id: 4)
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:16 PM
+Message: a Beef Burger was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:16 PM
+Message: a Coca Cola was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:16 PM
+Message: Menu (id:728a2bb8-278c-4e86-8398-f3be97cfdfdc) was added in the order (id: 5)
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:16 PM
+Message: a Beef Burger was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:16 PM
+Message: a Coca Cola was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:16 PM
+Message: Menu (id:241da3d3-678c-44eb-b9d8-23c3621124e8) was added in the order (id: 5)
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:17 PM
+Message: a Beef Burger was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:17 PM
+Message: a Coca Cola was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:17 PM
+Message: Menu (id:e98732a9-ffb0-4931-aa45-61874a0fea1a) was added in the order (id: 5)
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:17 PM
+Message: a Beef Burger was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:17 PM
+Message: a Coca Cola was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:17 PM
+Message: Menu (id:6087b12a-d57d-4ba3-811c-b38a917292e7) was added in the order (id: 5)
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:17 PM
+Message: a Beef Burger was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:17 PM
+Message: a Coca Cola was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:17 PM
+Message: Menu (id:c7436a2b-067c-4a91-b4bd-250ef248d4ef) was added in the order (id: 5)
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:17 PM
+Message: a Beef Burger was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:17 PM
+Message: a Coca Cola was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:17 PM
+Message: Menu (id:65aa691b-3264-43fb-ac9b-3314af674f50) was added in the order (id: 5)
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:17 PM
+Message: a Beef Burger was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:17 PM
+Message: a Coca Cola was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:17 PM
+Message: Menu (id:5feef550-2d90-4bf4-873f-081325354545) was added in the order (id: 5)
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:17 PM
+Message: a Beef Burger was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:17 PM
+Message: a Coca Cola was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:17 PM
+Message: Menu (id:9d3e7925-471c-4871-be52-5789e7adbf86) was added in the order (id: 5)
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:24 PM
+Message: a Beef Burger was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:24 PM
+Message: a Coca Cola was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:24 PM
+Message: Menu (id:0ad4b90e-3253-46a3-8d26-7b989636689c) was added in the order (id: 6)
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:25 PM
+Message: a Beef Burger was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:25 PM
+Message: a Coca Cola was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:25 PM
+Message: Menu (id:f5b6a676-62d8-4ff1-91c7-8229fa47d038) was added in the order (id: 6)
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:25 PM
+Message: a Beef Burger was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:25 PM
+Message: a Coca Cola was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:25 PM
+Message: Menu (id:5f403681-a27b-490d-9dbe-7211d36621f7) was added in the order (id: 6)
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:25 PM
+Message: a Beef Burger was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:25 PM
+Message: a Coca Cola was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:25 PM
+Message: Menu (id:aea45822-7a66-4fb7-b017-ebdd256d5682) was added in the order (id: 6)
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:25 PM
+Message: a Beef Burger was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:25 PM
+Message: a Coca Cola was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:25 PM
+Message: Menu (id:278e98c3-ed15-4b22-b0e1-bc1bb69145f6) was added in the order (id: 6)
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:25 PM
+Message: a Beef Burger was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:25 PM
+Message: a Coca Cola was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:25 PM
+Message: Menu (id:5189d30b-b7f1-418d-bafd-4cd5f3958c78) was added in the order (id: 6)
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:28 PM
+Message: Menu (id:0ad4b90e-3253-46a3-8d26-7b989636689c) was removed from the order (id: 6)
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:31 PM
+Message: Menu (id:f5b6a676-62d8-4ff1-91c7-8229fa47d038) was removed from the order (id: 6)
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:32 PM
+Message: Menu (id:5f403681-a27b-490d-9dbe-7211d36621f7) was removed from the order (id: 6)
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:34 PM
+Message: Menu (id:aea45822-7a66-4fb7-b017-ebdd256d5682) was removed from the order (id: 6)
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:35 PM
+Message: Menu (id:278e98c3-ed15-4b22-b0e1-bc1bb69145f6) was removed from the order (id: 6)
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:49 PM
+Message: a Beef Burger was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:49 PM
+Message: a Coca Cola was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:17:49 PM
+Message: Menu (id:ab0892d5-39d6-4795-83de-019d4c461da5) was added in the order (id: 7)
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:45:19 PM
+Message: a Beef Burger was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:45:19 PM
+Message: a Coca Cola was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:45:19 PM
+Message: Menu (id:b6d65056-6fb8-4d74-98d0-c7bd0c9c5eac) was added in the order (id: 1)
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:45:20 PM
+Message: a Beef Burger was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:45:20 PM
+Message: a Coca Cola was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:45:20 PM
+Message: Menu (id:512c6990-1311-4470-98cb-f83b4a562948) was added in the order (id: 1)
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:45:20 PM
+Message: a Beef Burger was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:45:20 PM
+Message: a Coca Cola was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:45:20 PM
+Message: Menu (id:2e9830d9-e014-4482-9bd5-df1ea6df9ce6) was added in the order (id: 1)
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:45:36 PM
+Message: a Beef Burger was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:45:36 PM
+Message: a Coca Cola was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:45:36 PM
+Message: Menu (id:dcb7bb7f-a1d2-4ae6-983d-a0f51c98ad69) was added in the order (id: 2)
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:45:36 PM
+Message: a Beef Burger was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:45:36 PM
+Message: a Coca Cola was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:45:36 PM
+Message: Menu (id:6e631a1f-9f3e-412e-8bcd-c29b889cb23c) was added in the order (id: 2)
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:45:53 PM
+Message: Menu (id:6e631a1f-9f3e-412e-8bcd-c29b889cb23c) was removed from the order (id: 2)
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:46:55 PM
+Message: a Beef Burger was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:46:55 PM
+Message: a Coca Cola was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:46:55 PM
+Message: Menu (id:553dd7f4-4b34-4946-87a1-ded6304dc185) was added in the order (id: 3)
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:46:56 PM
+Message: a Beef Burger was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:46:56 PM
+Message: a Coca Cola was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:46:56 PM
+Message: Menu (id:bc541b1a-bb38-443b-8885-141f9f53679d) was added in the order (id: 3)
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:46:56 PM
+Message: a Beef Burger was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:46:56 PM
+Message: a Coca Cola was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:46:56 PM
+Message: Menu (id:48532436-c6f0-474c-8ba9-212f1ec6a81b) was added in the order (id: 3)
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:46:56 PM
+Message: a Beef Burger was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:46:56 PM
+Message: a Coca Cola was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:46:56 PM
+Message: Menu (id:79a933cf-3b3b-4bbe-a0bd-62b095d50549) was added in the order (id: 3)
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:46:58 PM
+Message: Menu (id:bc541b1a-bb38-443b-8885-141f9f53679d) was removed from the order (id: 3)
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:48:20 PM
+Message: a Beef Burger was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:48:20 PM
+Message: a Coca Cola was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:48:20 PM
+Message: Menu (id:2768de14-2764-4e5e-af9a-b5d3633850ea) was added in the order (id: 1)
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:48:20 PM
+Message: a Beef Burger was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:48:20 PM
+Message: a Coca Cola was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:48:20 PM
+Message: Menu (id:25eafd6c-2a27-452f-9218-faf8eb8f73aa) was added in the order (id: 1)
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:48:20 PM
+Message: a Beef Burger was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:48:20 PM
+Message: a Coca Cola was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:48:20 PM
+Message: Menu (id:b171a3a5-d215-4fd0-90a6-7c653897f921) was added in the order (id: 1)
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:48:28 PM
+Message: Menu (id:25eafd6c-2a27-452f-9218-faf8eb8f73aa) was removed from the order (id: 1)
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:48:42 PM
+Message: a Beef Burger was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:48:42 PM
+Message: a Coca Cola was added in menu
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 7:48:42 PM
+Message: Menu (id:834498a8-9bd3-4e87-87a4-ca007f859706) was added in the order (id: 2)
+--------------------

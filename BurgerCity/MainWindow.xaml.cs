@@ -84,7 +84,6 @@ namespace BurgerCity
             AMenu selectedMenu = OrderContent.SelectedItem as AMenu;
             currentOrder.RemoveMenu(selectedMenu.GetUniqueId());
             ReinitOrderSource();
-            MessageBox.Show("Menu Deleted Successfully");
         }
 
         private void AddToOrder_Click(object sender, RoutedEventArgs e)
