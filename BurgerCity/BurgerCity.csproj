@@ -36,6 +36,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -64,7 +65,9 @@
     <Compile Include="Entities\Enums\BurgerType.cs" />
     <Compile Include="Entities\Enums\DrinkType.cs" />
     <Compile Include="Entities\Enums\PackingType.cs" />
+    <Compile Include="Entities\LogTemplate.cs" />
     <Compile Include="Entities\Order.cs" />
+    <Compile Include="Services\LoggerSingleton.cs" />
     <Compile Include="Services\MenuFactory.cs" />
     <Compile Include="Contracts\IMenuFactory.cs" />
     <Compile Include="Entities\Packing\Drink.cs" />

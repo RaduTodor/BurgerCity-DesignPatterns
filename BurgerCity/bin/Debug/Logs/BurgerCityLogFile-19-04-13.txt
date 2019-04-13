@@ -1,0 +1,16 @@
+--------------------
+Date: 4/13/2019
+Time: 1:10:29 PM
+Message: test
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 1:10:30 PM
+Message: test2
+--------------------
+--------------------
+Date: 4/13/2019
+Time: 1:10:34 PM
+Exception Message: ups
+Exception StackTrace:    at BurgerCity.MainWindow..ctor() in C:\Users\todor\OneDrive\Desktop\BurgerCity\BurgerCity-DesignPatterns\BurgerCity\MainWindow.xaml.cs:line 29
+--------------------
