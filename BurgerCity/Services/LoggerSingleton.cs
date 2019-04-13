@@ -20,6 +20,7 @@ namespace BurgerCity.Services
                                  string.Format(ConfigurationManager.AppSettings["LogsFileNameFormat"],
                                      DateTime.Now.ToString("yy-MM-dd"));
             Directory.CreateDirectory(currentLogDirectoryPath);
+            if(!File.Exists(currentLogPath))
             File.CreateText(currentLogPath).Close();
         }
 

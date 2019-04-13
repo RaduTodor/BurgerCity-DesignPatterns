@@ -5,6 +5,8 @@ using BurgerCity.Entities.Enums;
 using BurgerCity.Services;
 using System;
 using System.Collections.Generic;
+using System.Threading;
+using System.Threading.Tasks;
 using System.Windows;
 
 namespace BurgerCity
@@ -19,6 +21,7 @@ namespace BurgerCity
         private Order currentOrder = new Order(0);
         private List<Order> orderQueue = new List<Order>();
         private bool canFinalizeCurrentOrder = false;
+        public bool OrderCanceled { get; set; }
 
         public MainWindow()
         {
@@ -68,10 +71,20 @@ namespace BurgerCity
 
         private void SubmitOrder_Click(object sender, RoutedEventArgs e)
         {
-            orderQueue.Add(currentOrder);
-            currentOrder = new Order(++OrderIndex);
-            ReinitOrderSource();
-            ReinitOrderQueueSource();
+            FinalizeOrderWindow finalizeOrderWindow = new FinalizeOrderWindow();
+            finalizeOrderWindow.Visibility = Visibility.Visible;
+            finalizeOrderWindow.OrderPrice = currentOrder.TotalPrice;
+            finalizeOrderWindow.MainWindow = this;
+            OrderCanceled = false;
+            finalizeOrderWindow.ShowDialog();
+
+            if (!this.OrderCanceled)
+            {
+                orderQueue.Add(currentOrder);
+                currentOrder = new Order(++OrderIndex);
+                ReinitOrderSource();
+                ReinitOrderQueueSource();
+            }
         }
     }
 }
