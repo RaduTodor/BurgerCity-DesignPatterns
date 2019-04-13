@@ -34,8 +34,8 @@ namespace BurgerCity.Services
 
         public IAccount ChangeAccount(string accountCode)
         {
-            CurrentAccountCode = accountCode;
             SaveChanges();
+            CurrentAccountCode = accountCode;
 
             RealSubject = new PointsAccount();
             foreach (var account in AccountBalances)
