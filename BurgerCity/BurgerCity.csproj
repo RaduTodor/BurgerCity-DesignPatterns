@@ -35,9 +35,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CsvHelper, Version=12.0.0.0, Culture=neutral, PublicKeyToken=8c4959082be5c823, processorArchitecture=MSIL">
+      <HintPath>..\packages\CsvHelper.12.1.2\lib\net45\CsvHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
+    <Reference Include="System.ValueTuple, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.4.0\lib\net461\System.ValueTuple.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -56,6 +63,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Contracts\IAccount.cs" />
     <Compile Include="Contracts\IOrder.cs" />
     <Compile Include="Contracts\IOrderQueue.cs" />
     <Compile Include="Contracts\ISubscriber.cs" />
@@ -70,6 +78,10 @@
     <Compile Include="Entities\Enums\PackingType.cs" />
     <Compile Include="Entities\LogTemplate.cs" />
     <Compile Include="Entities\Order.cs" />
+    <Compile Include="Entities\PointsAccount.cs" />
+    <Compile Include="FinalizeOrderWindow.xaml.cs">
+      <DependentUpon>FinalizeOrderWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Entities\OrderQueue.cs" />
     <Compile Include="Entities\Subscriber.cs" />
     <Compile Include="Services\LoggerSingleton.cs" />
@@ -77,6 +89,11 @@
     <Compile Include="Contracts\IMenuFactory.cs" />
     <Compile Include="Entities\Packing\Drink.cs" />
     <Compile Include="Services\MenuBuilder.cs" />
+    <Compile Include="Services\PointsAccountProxy.cs" />
+    <Page Include="FinalizeOrderWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -124,6 +141,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
