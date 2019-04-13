@@ -9,5 +9,6 @@ namespace BurgerCity.Contracts
         void AddMenu(MenuDecorator menu);
         IDictionary<Guid, string> Display();
         void RemoveMenu(Guid uniqueId);
+        void Upgrade();
     }
 }

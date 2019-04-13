@@ -1,6 +1,7 @@
 ﻿using BurgerCity.Contracts;
 using BurgerCity.Decorators;
 using BurgerCity.Entities.Enums;
+using BurgerCity.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,6 +24,8 @@ namespace BurgerCity.Entities
         {
             Menus.Add(menu);
             TotalPrice += menu.GetCost();
+            LoggerSingleton.Logger.LogMessage(string.Format("Menu (id:{0}) was added in the order (id: {1})", menu.GetUniqueId(), UniqueKey));
+
         }
 
         public IDictionary<Guid, string> Display()
@@ -45,6 +48,20 @@ namespace BurgerCity.Entities
         {
             var toBeRemoved = Menus.Where(x => x.GetUniqueId() == uniqueId).FirstOrDefault();
             Menus.Remove(toBeRemoved);
+            LoggerSingleton.Logger.LogMessage(string.Format("Menu (id:{0}) was removed from the order (id: {1})", toBeRemoved.GetUniqueId(), UniqueKey));
+        }
+
+        public void Upgrade()
+        {
+            switch (Process)
+            {
+                case OrderProcess.OnWaitingList:
+                    Process = OrderProcess.InProgress;
+                    break;
+                case OrderProcess.InProgress:
+                    Process = OrderProcess.Ready;
+                    break;
+            }
         }
     }
 }

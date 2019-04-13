@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BurgerCity.Services;
+using System;
 using System.Collections.Generic;
 
 namespace BurgerCity.Contracts
@@ -11,6 +12,7 @@ namespace BurgerCity.Contracts
         public virtual void AddItem(IMenuItem item)
         {
             Items.Add(item);
+            LoggerSingleton.Logger.LogMessage(string.Format("a {0} was added in menu", item.Name()));
         }
 
         public abstract float GetCost();

@@ -5,11 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BurgerCity"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="1000">
+        Title="MainWindow" Height="600" Width="1100">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
         <StackPanel HorizontalAlignment="left" VerticalAlignment="top" Width="500">
             <Label>BURGER CITY MENU</Label>
@@ -31,26 +31,26 @@
             <Button Click="AddToOrder_Click">Add to current order</Button>
             <ScrollViewer HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Visible">
                 <Grid HorizontalAlignment="Left" Height="300" VerticalAlignment="Top" Width="450" Margin="10,63,0,0">
-                    <DataGrid ColumnWidth="*" Name="OrderContent" ItemsSource="{Binding order.Menus}" AutoGenerateColumns="False" SelectionMode="Single" IsReadOnly="False" >
+                    <DataGrid ColumnWidth="*" Name="OrderContent" ItemsSource="{Binding order.Menus}" AutoGenerateColumns="False" SelectionMode="Single" IsReadOnly="False">
                         <DataGrid.Columns>
-                            <DataGridTemplateColumn Header="Menu">
+                            <DataGridTemplateColumn Header="Menu" Width="290">
                                 <DataGridTemplateColumn.CellTemplate>
                                     <DataTemplate>
                                         <TextBlock Margin="10" Text="{Binding Content}"/>
                                     </DataTemplate>
                                 </DataGridTemplateColumn.CellTemplate>
                             </DataGridTemplateColumn>
-                            <DataGridTemplateColumn Header="Price">
+                            <DataGridTemplateColumn Header="Price" Width="80">
                                 <DataGridTemplateColumn.CellTemplate>
                                     <DataTemplate>
                                         <TextBlock Margin="10" Text="{Binding Path=TotalPrice, StringFormat=+ {0} RON}"/>
                                     </DataTemplate>
                                 </DataGridTemplateColumn.CellTemplate>
                             </DataGridTemplateColumn>
-                            <DataGridTemplateColumn Header="Remove">
+                            <DataGridTemplateColumn Header="Remove" Width="70">
                                 <DataGridTemplateColumn.CellTemplate>
                                     <DataTemplate>
-                                        <Button Content="X" Click="btnDelete_Click"/>
+                                        <Button Content="X" Click="btnDelete_Click" Width="40"/>
                                     </DataTemplate>
                                 </DataGridTemplateColumn.CellTemplate>
                             </DataGridTemplateColumn>
@@ -59,27 +59,63 @@
                 </Grid>
             </ScrollViewer>
             <Button x:Name="FinalizeOrderBtn" Click="SubmitOrder_Click">Finalize order</Button>
-
         </StackPanel>
-        <Grid Margin="10">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="416*"/>
-                <ColumnDefinition Width="13*"/>
-                <ColumnDefinition Width="11*"/>
-            </Grid.ColumnDefinitions>
-            <ListBox x:Name="OrderList" Grid.Column="2" Margin="39,0,-454,0">
-                <ListBox.ItemTemplate>
-                    <DataTemplate>
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Width="auto">
+        <StackPanel HorizontalAlignment="Right" Margin="0,0,10,0" Width="526" Grid.Column="1">
+            <Grid Margin="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="0">
+                    <TextBox Text="WAITING"></TextBox>
+
+                    <ListBox x:Name="WaitingList">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Width="auto">
                                 <TextBox Text="{Binding UniqueKey, StringFormat=Id: {0}}" />
-                                <TextBox Text="{Binding Process, StringFormat=Status: {0}}" />
                                 <TextBox Text="{Binding TotalPrice, StringFormat=-> {0} RON}" />
-                            </TextBlock>
-                        </StackPanel>
-                    </DataTemplate>
-                </ListBox.ItemTemplate>
-            </ListBox>
-        </Grid>
+                                    </TextBlock>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                </StackPanel>
+                <StackPanel Grid.Column="1">
+                    <TextBox Text="IN PROGRESS"></TextBox>
+                    <ListBox x:Name="InProgress">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Width="auto">
+                                <TextBox Text="{Binding UniqueKey, StringFormat=Id: {0}}" />
+                                <TextBox Text="{Binding TotalPrice, StringFormat=-> {0} RON}" />
+                                    </TextBlock>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                </StackPanel>
+                <StackPanel Grid.Column="2">
+                    <TextBox Text="READY"></TextBox>
+
+                    <ListBox x:Name="Ready">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Width="auto">
+                                <TextBox Text="{Binding UniqueKey, StringFormat=Id: {0}}" />
+                                <TextBox Text="{Binding TotalPrice, StringFormat=-> {0} RON}" />
+                                    </TextBlock>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                </StackPanel>
+                
+            </Grid>
+        </StackPanel>
     </Grid>
 </Window>

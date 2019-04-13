@@ -1,31 +1,59 @@
 ﻿using BurgerCity.Contracts;
-using BurgerCity.Decorators;
 using BurgerCity.Entities;
 using BurgerCity.Entities.Enums;
 using BurgerCity.Services;
 using System;
-using System.Collections.Generic;
+using System.Linq;
+using System.Threading;
 using System.Windows;
 
 namespace BurgerCity
 {
+    
+
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
         private MenuBuilder builder = new MenuBuilder();
-        private int OrderIndex = 0;
-        private Order currentOrder = new Order(0);
-        private List<Order> orderQueue = new List<Order>();
+        private int OrderIndex = 1;
+        private Order currentOrder = new Order(1);
+        private static IOrderQueue AllOrders = new OrderQueue();
+
+        private Subscriber waitingListOrders = new Subscriber { Process = OrderProcess.OnWaitingList };
+        private Subscriber inProgressOrders = new Subscriber { Process = OrderProcess.InProgress };
+        private Subscriber readyOrders = new Subscriber { Process = OrderProcess.Ready };
+
         private bool canFinalizeCurrentOrder = false;
+
+        private void OnTick(object source, System.Timers.ElapsedEventArgs e)
+        {
+            AllOrders.Upgrade();
+            this.Dispatcher.Invoke(() =>
+            {
+                ReinitOrderQueueSource();
+            });
+        }
 
         public MainWindow()
         {
             InitializeComponent();
             OrderContent.ItemsSource = currentOrder.Menus;
-            OrderList.ItemsSource = orderQueue;
             FinalizeOrderBtn.Visibility = Visibility.Hidden;
+            AllOrders.Subscribe(waitingListOrders);
+            AllOrders.Subscribe(inProgressOrders);
+            AllOrders.Subscribe(readyOrders);
+
+            WaitingList.ItemsSource = waitingListOrders.SpecificOrders;
+            InProgress.ItemsSource = inProgressOrders.SpecificOrders;
+            Ready.ItemsSource = readyOrders.SpecificOrders;
+
+            Random rnd = new Random();
+            var timer = new System.Timers.Timer(rnd.Next(3000, 10000));
+            timer.Elapsed += OnTick;
+
+            timer.Start();
         }
 
         private void ReinitOrderSource()
@@ -38,8 +66,13 @@ namespace BurgerCity
 
         private void ReinitOrderQueueSource()
         {
-            OrderList.ItemsSource = null;
-            OrderList.ItemsSource = orderQueue;
+            WaitingList.ItemsSource = null;
+            InProgress.ItemsSource = null;
+            Ready.ItemsSource = null;
+
+            WaitingList.ItemsSource = waitingListOrders.SpecificOrders;
+            InProgress.ItemsSource = inProgressOrders.SpecificOrders;
+            Ready.ItemsSource = readyOrders.SpecificOrders;
         }
 
 
@@ -68,7 +101,7 @@ namespace BurgerCity
 
         private void SubmitOrder_Click(object sender, RoutedEventArgs e)
         {
-            orderQueue.Add(currentOrder);
+            AllOrders.AddOrder(currentOrder);
             currentOrder = new Order(++OrderIndex);
             ReinitOrderSource();
             ReinitOrderQueueSource();
