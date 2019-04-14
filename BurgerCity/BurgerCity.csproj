@@ -63,6 +63,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Contracts\ARating.cs" />
     <Compile Include="Contracts\IAccount.cs" />
     <Compile Include="Contracts\IOrder.cs" />
     <Compile Include="Contracts\IOrderQueue.cs" />
@@ -77,13 +78,18 @@
     <Compile Include="Entities\Enums\DrinkType.cs" />
     <Compile Include="Entities\Enums\PackingType.cs" />
     <Compile Include="Entities\LogTemplate.cs" />
+    <Compile Include="Entities\NullRatingObject.cs" />
     <Compile Include="Entities\Order.cs" />
     <Compile Include="Entities\PointsAccount.cs" />
+    <Compile Include="Entities\RealRatingObject.cs" />
     <Compile Include="FinalizeOrderWindow.xaml.cs">
       <DependentUpon>FinalizeOrderWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Entities\OrderQueue.cs" />
     <Compile Include="Entities\Subscriber.cs" />
+    <Compile Include="RatingPage.xaml.cs">
+      <DependentUpon>RatingPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Services\LoggerSingleton.cs" />
     <Compile Include="Services\MenuFactory.cs" />
     <Compile Include="Contracts\IMenuFactory.cs" />
@@ -122,6 +128,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="RatingPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -150,6 +160,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

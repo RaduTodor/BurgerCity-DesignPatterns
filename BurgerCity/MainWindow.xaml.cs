@@ -124,6 +124,9 @@ namespace BurgerCity
         private void Ready_OnMouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             AllOrders.RemoveOrder((Order)((ListBox)sender).SelectedItem);
+            RatingPage ratingPage = new RatingPage();
+            ratingPage.RatedOrder = (Order)((ListBox)sender).SelectedItem;
+            ratingPage.Show();
             ReinitOrderQueueSource();
         }
     }
