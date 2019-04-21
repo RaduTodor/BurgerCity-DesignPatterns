@@ -5,6 +5,8 @@ using BurgerCity.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Windows.Controls;
+
 namespace BurgerCity.Entities
 {
     public class Order : IOrder
@@ -24,7 +26,7 @@ namespace BurgerCity.Entities
         {
             Menus.Add(menu);
             TotalPrice += menu.GetCost();
-            LoggerSingleton.Logger.LogMessage(string.Format("Menu (id:{0}) was added in the order (id: {1})", menu.GetUniqueId(), UniqueKey));
+            LoggerSingleton.Logger.LogMessage(string.Format("Menu (id:{0}) was added in the order (id: {1}). Menu cost:{2} and was composed of {3}", menu.GetUniqueId(), UniqueKey, menu.TotalPrice, menu.Content));
 
         }
 
@@ -49,7 +51,7 @@ namespace BurgerCity.Entities
             var toBeRemoved = Menus.Where(x => x.GetUniqueId() == uniqueId).FirstOrDefault();
             Menus.Remove(toBeRemoved);
             TotalPrice -= toBeRemoved.GetCost();
-            LoggerSingleton.Logger.LogMessage(string.Format("Menu (id:{0}) was removed from the order (id: {1})", toBeRemoved.GetUniqueId(), UniqueKey));
+            LoggerSingleton.Logger.LogMessage(string.Format("Menu (id:{0}) was removed from the order (id: {1}). Menu cost:{2} and was composed of {3}", toBeRemoved.GetUniqueId(), UniqueKey, toBeRemoved.TotalPrice, toBeRemoved.Content));
         }
 
         public void Upgrade()
