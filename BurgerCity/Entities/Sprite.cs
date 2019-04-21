@@ -2,11 +2,11 @@
 
 namespace BurgerCity.Entities
 {
-    public class CocaCola : ColdDrink
+    public class Sprite : ColdDrink
     {
         public override string Name()
         {
-            return "Coca Cola";
+            return "Sprite";
         }
 
         public override float Price()

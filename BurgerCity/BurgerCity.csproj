@@ -107,8 +107,8 @@
     <Compile Include="Entities\HotCocoa.cs" />
     <Compile Include="Entities\BlackTea.cs" />
     <Compile Include="Entities\Menu.cs" />
-    <Compile Include="Entities\Sprite.cs" />
     <Compile Include="Entities\CocaCola.cs" />
+    <Compile Include="Entities\Sprite.cs" />
     <Compile Include="Entities\Packing\HotDrink.cs" />
     <Compile Include="Entities\Packing\Cup.cs" />
     <Compile Include="Entities\BeefBurger.cs" />
