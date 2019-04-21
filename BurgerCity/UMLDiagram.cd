@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="BurgerCity.RatingPage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAIAAAgAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>RatingPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BurgerCity.Contracts.AMenu" Collapsed="true">
+    <Position X="4" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAACAAAAAAAAQAAgAAAAAAAAAAAAAAEQAA=</HashCode>
+      <FileName>Contracts\AMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BurgerCity.Contracts.ARating" Collapsed="true">
+    <Position X="6.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Contracts\ARating.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BurgerCity.Decorators.BigDecorator" Collapsed="true">
+    <Position X="5.25" Y="3.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Decorators\BigDecorator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BurgerCity.Decorators.MenuDecorator" Collapsed="true">
+    <Position X="3" Y="1.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAwAAgAAAAAAAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Decorators\MenuDecorator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BurgerCity.Decorators.NormalDecorator" Collapsed="true">
+    <Position X="0.75" Y="3.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Decorators\NormalDecorator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BurgerCity.Decorators.SmallDecorator" Collapsed="true">
+    <Position X="3" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Decorators\SmallDecorator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BurgerCity.Entities.BeefBurger" Collapsed="true">
+    <Position X="2.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\BeefBurger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BurgerCity.Entities.BlackTea" Collapsed="true">
+    <Position X="5.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\BlackTea.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BurgerCity.Entities.CocaCola" Collapsed="true">
+    <Position X="3" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\CocaCola.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BurgerCity.Entities.HotCocoa" Collapsed="true">
+    <Position X="7.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\HotCocoa.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BurgerCity.Entities.LogTemplate" Collapsed="true">
+    <Position X="12" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAABAABAIAAAAQA=</HashCode>
+      <FileName>Entities\LogTemplate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BurgerCity.Entities.Menu" Collapsed="true">
+    <Position X="7.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Menu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BurgerCity.Entities.NullRatingObject" Collapsed="true">
+    <Position X="5.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAQABAAAAAAAA=</HashCode>
+      <FileName>Entities\NullRatingObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BurgerCity.Entities.Order" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="15.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAEAAgAiAQAAAAACQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Order.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BurgerCity.Entities.OrderQueue" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAgAAAAAAAAAAAgAAAAAAACAABAQQAAADAAAAA=</HashCode>
+      <FileName>Entities\OrderQueue.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BurgerCity.Entities.PointsAccount" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAABQgAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Entities\PointsAccount.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BurgerCity.Entities.RealRatingObject" Collapsed="true">
+    <Position X="7.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Entities\RealRatingObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BurgerCity.Entities.Sprite" Collapsed="true">
+    <Position X="0.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Sprite.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BurgerCity.Entities.Subscriber" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="15.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAEAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Subscriber.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BurgerCity.Entities.VegBurger" Collapsed="true">
+    <Position X="0.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\VegBurger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BurgerCity.Entities.Packing.Bottle" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Packing\Bottle.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BurgerCity.Entities.Packing.Burger" Collapsed="true">
+    <Position X="1.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAQAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Packing\Burger.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="BurgerCity.Entities.Packing.ColdDrink" Collapsed="true">
+    <Position X="1.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Packing\ColdDrink.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BurgerCity.Entities.Packing.Cup" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Packing\Cup.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BurgerCity.Entities.Packing.Drink" Collapsed="true">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAQAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Packing\Drink.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="BurgerCity.Entities.Packing.HotDrink" Collapsed="true">
+    <Position X="6.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Packing\HotDrink.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BurgerCity.Entities.Packing.Wrapper" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Packing\Wrapper.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BurgerCity.Services.LoggerSingleton" Collapsed="true">
+    <Position X="10.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAIAAgACAAAAAAAAIAAAAAAAAAAAAAAACAE=</HashCode>
+      <FileName>Services\LoggerSingleton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BurgerCity.Services.MenuBuilder" Collapsed="true">
+    <Position X="10.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\MenuBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BurgerCity.Services.MenuFactory" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Services\MenuFactory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BurgerCity.Services.PointsAccountProxy" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAACiAAAABQAAAABAAAAIAAAAAAAAAAgQAAAAAAAAA=</HashCode>
+      <FileName>Services\PointsAccountProxy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="BurgerCity.Contracts.IAccount" Collapsed="true">
+    <Position X="10.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAABQAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Contracts\IAccount.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BurgerCity.Contracts.IMenuFactory" Collapsed="true">
+    <Position X="12" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Contracts\IMenuFactory.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BurgerCity.Contracts.IMenuItem" Collapsed="true">
+    <Position X="13.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAQAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Contracts\IMenuItem.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BurgerCity.Contracts.IOrder" Collapsed="true">
+    <Position X="15.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAAgAQAAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Contracts\IOrder.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BurgerCity.Contracts.IOrderQueue" Collapsed="true">
+    <Position X="17.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAgAAAAAAAAAAAgAAAAAAACAABAQQAAAAAAAAA=</HashCode>
+      <FileName>Contracts\IOrderQueue.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BurgerCity.Contracts.IPacking" Collapsed="true">
+    <Position X="10.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Contracts\IPacking.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BurgerCity.Contracts.ISubscriber" Collapsed="true">
+    <Position X="12" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Contracts\ISubscriber.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="BurgerCity.Entities.Enums.BurgerType" Collapsed="true">
+    <Position X="10.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Entities\Enums\BurgerType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="BurgerCity.Entities.Enums.DrinkType" Collapsed="true">
+    <Position X="12" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAIAAAAAAAAAABEAAAAAA=</HashCode>
+      <FileName>Entities\Enums\DrinkType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="BurgerCity.Entities.Enums.MenuSize" Collapsed="true">
+    <Position X="13.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>Entities\Enums\MenuSize.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="BurgerCity.Entities.Enums.OrderProcess" Collapsed="true">
+    <Position X="15.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAAIAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Entities\Enums\OrderProcess.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="BurgerCity.Entities.Enums.PackingType" Collapsed="true">
+    <Position X="17.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAACACAAAAAAA=</HashCode>
+      <FileName>Entities\Enums\PackingType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
